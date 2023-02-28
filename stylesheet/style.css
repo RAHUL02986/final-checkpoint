@@ -1,0 +1,346 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.hero {
+  background: no-repeat url(../media/349872.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+.hero .hobo {
+  text-align: center;
+  padding-top: 25rem;
+}
+.hero .hobo h1 {
+  font-size: 3rem;
+  color: white;
+  font-weight: 400;
+}
+.hero .hobo p {
+  font-size: 2rem;
+  color: white;
+  font-weight: 500;
+}
+.hero .hobo .btn-div {
+  margin-top: 3rem;
+}
+.hero .hobo .btn-div:hover {
+  transform: scale(0.8);
+}
+
+.grid {
+  display: grid;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto 200px;
+}
+
+.about {
+  margin-top: 3rem;
+}
+.about img {
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid greenyellow;
+}
+.about p {
+  font-size: 1.2rem;
+  text-align: center;
+  color: rgb(78, 67, 67);
+}
+
+h2 {
+  font-size: 2rem;
+  text-align: center;
+  padding: 2rem 0;
+  color: rgb(93, 99, 93);
+  font-weight: 500;
+}
+
+.about-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  padding-top: 5rem;
+  color: yellowgreen;
+  font-weight: 600;
+}
+
+.contact {
+  padding-top: 2rem;
+}
+.contact .map {
+  width: 550PX;
+  border-radius: 5px;
+}
+.contact .map iframe {
+  height: 360px;
+  border-radius: 5px;
+}
+.contact input {
+  width: 80%;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  margin-left: 6rem;
+  border-radius: 5px;
+  outline: none;
+}
+.contact textarea {
+  width: 80%;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-left: 6rem;
+  outline: none;
+}
+
+html {
+  font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+body {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  background-color: rgb(197, 211, 206);
+}
+
+.margin {
+  margin-top: 10rem;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  color: greenyellow;
+  transform: scale(1.2);
+}
+
+li {
+  text-decoration: none;
+  margin-left: 2rem;
+}
+li:hover {
+  transform: scale(0.9);
+}
+
+.btn {
+  width: 220px;
+  height: 80px;
+  border-radius: 40px;
+  border: 1px solid rgb(117, 165, 29);
+  text-align: center;
+  padding: 0.5rem 1.5rem;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  grid-template-rows: repeat(auto, 250px);
+  padding-top: 2rem;
+}
+.grid-2 img {
+  border-radius: 10px;
+  border: 2px solid chartreuse;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 10px;
+  }
+  .container {
+    width: 720px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+  }
+  label.logo {
+    font-size: 30px;
+    padding-left: 30px;
+  }
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+  a:hover {
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .grid-2 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .flex {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+  }
+  img {
+    width: 100%;
+  }
+}
+header {
+  background-color: #7ec7e4;
+  padding: 1rem 5rem;
+  color: white;
+  position: fixed;
+  width: 100%;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+.blog-bg {
+  background-color: aliceblue;
+}
+
+.blog article {
+  padding-top: 5rem;
+}
+.blog h3 {
+  font-size: 2rem;
+  padding-left: 2rem;
+  color: dimgray;
+}
+.blog p {
+  font-size: 1.4rem;
+  padding-left: 2rem;
+  color: lightslategrey;
+}
+
+.blog-img {
+  text-align: center;
+  color: white;
+}
+.blog-img img {
+  margin-top: 6rem;
+  width: 80%;
+  height: 70vh;
+}
+
+.blog-team {
+  height: 400px;
+  text-align: center;
+  color: white;
+}
+.blog-team img {
+  width: 100%;
+  margin-top: 2rem;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.footer-bg {
+  background-color: rgb(152, 223, 199);
+  padding: 2rem;
+  color: white;
+  font-size: 2rem;
+  margin-top: 2rem;
+}/*# sourceMappingURL=style.css.map */

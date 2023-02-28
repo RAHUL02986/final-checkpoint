@@ -1,0 +1,63 @@
+header{
+    background-color: $skyblue;
+    padding: 1rem 5rem;
+    color: white;
+    position: fixed;
+    width: 100%;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+.blog-bg{
+    background-color: aliceblue;
+}
+.blog{
+    
+    article{
+        padding-top: 5rem;
+    }
+    
+    h3{
+        font-size: 2rem;
+        padding-left: 2rem;
+        color: dimgray;
+
+    }
+    p{
+        font-size: 1.4rem;
+        padding-left: 2rem;
+        color: lightslategrey;
+    }
+}
+
+.blog-img{
+    text-align: center;
+    color: white;
+
+    img{
+        margin-top: 6rem;
+        width: 80%;
+        height: 70vh;
+    }
+}
+.blog-team{
+    height: 400px;
+    text-align: center;
+    color: white;
+    img{
+        width: 100%;
+        margin-top: 2rem;
+        height: 300px;
+        border-radius: 10px;
+    }
+}

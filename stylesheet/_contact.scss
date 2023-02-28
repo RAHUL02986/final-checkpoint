@@ -1,0 +1,30 @@
+.contact{
+    padding-top: 2rem;
+    .map{
+        width:550PX ;
+        // height: 360px;
+        border-radius: 5px;
+        iframe{
+            height: 360px;
+            border-radius: 5px;
+        }
+    }
+
+    input{
+        width: 80%;
+        margin-bottom:1rem ;
+        padding: 1rem ;
+        margin-left: 6rem;
+        border-radius: 5px;
+        outline: none;
+
+    }
+    textarea{
+        width: 80%;
+        border-radius: 5px;
+        padding: 1rem ;
+        margin-left: 6rem;
+
+        outline: none;
+    }
+}
